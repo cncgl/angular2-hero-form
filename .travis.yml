@@ -13,7 +13,7 @@ before_script:
 script:
   - git checkout -b gh-pages
 after_success:
-  - cd dist
+  - cd build
   - git add -A
   - "git commit -m 'Update'"
   - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/cncgl/angular2-hero-form.git gh-pages 2> /dev/null'
