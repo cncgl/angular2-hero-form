@@ -17,4 +17,4 @@ script:
   - git add -A
   - git commit -m 'Deploy to GitHun Pages'
 after_success:
-  - '[ $GH_TOKEN ] && git push --force --quiet https://$GH_TOKEN@github.com/cncgl/angular2-hero-form.git gh-pages 2> /dev/null'
+  - '[ $GH_TOKEN ] && git push --force --quiet https://$GH_TOKEN@github.com/cncgl/angular2-hero-form.git master:gh-pages 2> /dev/null'
