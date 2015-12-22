@@ -3,11 +3,18 @@ node_js:
   - '4.2'
 env:
   global:
+    - CXX=g++-4.8
     - GIT_COMMITTER_NAME=cncgl
     - GIT_COMMITTER_EMAIL=concigel@gmail.com
     - GIT_AUTHOR_NAME=cncgl
     - GIT_AUTHOR_EMAIL=concigel@gmail.com
     - secure: cxwjDfkQNn0QcZWwAUxLG6Qm7dOH73JBYZUZxuDmmq+HegDHwYiOPtZ2WToR+WVA0IVHlaPE1UYqNRQFaYnxGwPaB/SisxECr7aq31aU2WtMF2zKox6M7T4miW9hNxWVFkvmzKu9yOxKRUah5RFl8cIjMmOEDWf5j32rCSEYS01OLH3BtTe5lIzV30sRgnO2LhNkWRkCt5AuO4AXw4gxA+Bfi/37iR7p4KdLCCTNyUKKKMBNW3MASsD/5iXLHRcU8SaZMgZi1V5ArBJtvheVABdzFVRglXKlE9EVnGC0sf141K1BY3pbAHIPRcc4+mu4R8vHyQEG5x6+LaqOx/16D09YHaw/pn3/nMYDBQ+1EWa0PnymcNsy9VUeScmI1U5LiHlJVme7gvS5H5uN/z4hzg97yoKBmMomYQ6JnGFTOKQVFVpCY9JoEAjsDw/rHmI8oeo/aeUGSLRIUyDElMliOuPGSlDEdYEpJ0+/Kr+xXfqNRUlA66z0+TRq3F1tFh4uX8XCeEv8uabCMyo2dZ7phoupkhE5FemWyDkC0Zu9c4BibU7t/CJdkziLWTI7UDYUzUA7uQ+4st8qHMToOCUNFnr9PN6oJ8dWCQ+dxLTvpu7NAypfjtAXWWwrg4dzLN/Wf6rNN1GNAO2s29Io19cEJnMtyB01/l1S8FbPs4+yaxw=
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 before_script:
   - npm install
 script:
