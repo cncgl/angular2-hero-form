@@ -14,6 +14,7 @@ script:
   - cp -r app build
   - cd build
   - git init
-  - git commit -am 'Deploy to GitHun Pages'
+  - git add -A
+  - git commit -m 'Deploy to GitHun Pages'
 after_success:
   - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/cncgl/angular2-hero-form.git gh-pages 2> /dev/null'
