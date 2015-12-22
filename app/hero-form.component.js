@@ -5,7 +5,7 @@
     app.HeroFormComponent = ng.core
         .Component({
             selector: 'hero-form',
-            templateUrl: 'app/hero-form.component.html'
+            templateUrl: 'hero-form.component.html'
         })
         .Class({
             constructor: function () {

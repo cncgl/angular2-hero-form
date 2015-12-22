@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    'vendor': './app/vendor.js',
+    // 'vendor': './app/vendor.js',
     'boot': './app/boot.js'
   },
   output: {

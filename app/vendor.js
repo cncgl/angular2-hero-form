@@ -5,6 +5,8 @@
 // require('../node_modules/rxjs/bundles/Rx');
 require('rxjs');
 // require('../node_modules/angular2/bundles/angular2');
+require('reflect-metadata');
+require('zone.js');
 require('angular2/platform/browser');
 require('angular2/platform/common_dom');
 require('angular2/core');
