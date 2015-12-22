@@ -8,3 +8,6 @@
 
 ## デモ
 http://cncgl.github.io/angular2-hero-form/
+
+## License
+MIT
